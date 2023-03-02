@@ -1,0 +1,167 @@
+.Choose__click{
+    border: 1px solid $color-grey-2;
+    width: 230px;
+    border-radius: 5px;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 90px;
+    position: relative;
+    z-index: 1;
+
+    &__City{
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 0px !important;
+    }
+
+    &__Origen{
+        font-weight: 400;
+        font-size: 13px;
+        color: $color-grey-1;
+        margin-bottom: 0px !important;
+    }
+}
+
+.ChooseFixed{
+    width: 245px;
+    border: 1px solid $color-grey-2;
+    width: 290px;
+    height: 330px;
+    border-radius: 12px;
+    padding: 17px;
+    background-color: $color-white;
+    box-shadow: 1000px 1000px 0px 10000000px rgba(51, 41, 39, .3);
+    z-index: 2;
+    position: absolute;
+    // bottom: 0;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-weight: 600 ;
+            font-size: 16px ;
+        }
+
+        i{
+            cursor: pointer;
+        }
+    }
+
+    &__filter{
+        border: 2px solid $color-grey-2;
+        display: flex;
+        padding: 4px;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-bottom: 2px;
+
+        input{
+            border: none;
+            outline: none;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    .focus{
+        border: 2px solid $color-primary;
+    }
+
+    &__destinos{
+        height: 203px;
+        overflow-y: scroll;
+        border-top: 1px solid $color-grey-2;
+
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-left: 1px solid $color-grey-2;
+            border-right: 1px solid $color-grey-2;
+            border-bottom: 1px solid $color-grey-2;
+            padding: 5px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        div:hover{
+            background-color: #F0F0F0;
+        }
+
+        .city{
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .abbr{
+            font-weight: 500;
+            font-size: 15px;
+            color: $color-grey-1;
+        }
+    }
+
+    &__destinos::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .Choose__click{
+        width: 350px;
+    }
+    .ChooseFixed{
+        width: 350px;
+    }
+}
+
+@media (max-width: 439px) {
+    .Choose__click{
+        width: 320px;
+    }
+    .ChooseFixed{
+        width: 320px;
+    }
+}
+
+@media (max-width: 399px) {
+    .Choose__click{
+        width: 300px;
+    }
+    .ChooseFixed{
+        width: 300px;
+    }
+}
+
+@media (max-width: 379px) {
+    .Choose__click{
+        width: 280px;
+    }
+    .ChooseFixed{
+        width: 280px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Choose__click{
+        width: 260px;
+    }
+    .ChooseFixed{
+        width: 260px;
+    }
+}
+
+@media (max-width: 360px) {
+    .Choose__click{
+        width: 268px;
+    }
+    .ChooseFixed{
+        width: 268px;
+    }
+}

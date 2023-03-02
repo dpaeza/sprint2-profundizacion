@@ -1,0 +1,52 @@
+
+.serviceCard{
+    height: 250px;
+    width: 195px;
+    border-radius: 25px;
+    padding: 20px 15px;
+    box-shadow: 1px 4px 8px 1px rgba(51, 41, 39, .3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    div{
+        background-color: $color-primary;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__tittle{
+        font-size: 15px;
+        font-weight: 700;
+        margin: 15px 0px;
+
+    }
+
+    p{
+        font-size: 13px;
+        font-weight: 500;
+        color: $color-grey-1;
+        text-align: center;
+    }
+}
+
+.serviceCard:hover{
+    box-shadow: 1px 4px 8px 4px rgba(51, 41, 39, .3);
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    color: $color-white;
+    fill: 1;
+}
+
+@media (max-width: 449px) {
+    .serviceCard{
+        width: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+.changeFlightHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.changeFlightButton{
+    background-color: $color-bg;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    font-size: 16px;
+    height: 40px;
+    width: 170px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.changeFlight{
+
+    &__date{
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    &__date:first-letter {
+        text-transform: uppercase;
+    }
+
+    &__destination{
+        color: $color-grey-1;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__selectTittle{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 20px 0px 15px 0px;
+    }
+
+    &__div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .changeFlightHeader{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    .navLink{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

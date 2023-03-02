@@ -1,0 +1,61 @@
+.flight{
+    background-color: $color-white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+
+    &__div1{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        &__hour{
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &__grey{
+            color: $color-grey-1;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        &__circle{
+            width: 7px;
+            height: 7px;
+            background-color: $color-black;
+            border-radius: 50%;
+        }
+
+        &__div2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0px;
+        }
+
+        hr{
+            width: 70px;
+            height: 1px;
+            border: 1px solid $color-grey-2;
+        }
+    }
+
+    &__luggage{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+}

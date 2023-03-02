@@ -1,0 +1,14 @@
+
+.PassengerCategory{
+    &__category{
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+
+    &__range{
+        font-weight: 400;
+        font-size: 13px;
+        color: $color-grey-1;
+    }
+}

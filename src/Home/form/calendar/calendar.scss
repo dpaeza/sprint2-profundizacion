@@ -1,0 +1,129 @@
+.calendarOverlay{
+    background-color: rgba(36, 31, 31, 0.4);
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calendar{
+    height: 450px;
+    width: 700px;
+    background-color: $color-white;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    &__div1{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $color-grey-3;
+        h1{
+            font-weight: 200px;
+            font-size: 22px;
+        }
+
+        i{
+            cursor: pointer;
+        }
+    }
+
+    &__div2{
+        display: flex;
+        margin-top: 15px;
+        border-bottom: 1px solid $color-grey-3;
+        p{
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    
+    .doneButton{
+        background-color: $color-primary;
+        border: none;
+        font-weight: 300;
+        font-size: 18px;
+        color: $color-white;
+        align-self: flex-end;
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+.rdrDayToday .rdrDayNumber span:after{
+    background-color: $color-primary !important;
+}
+
+.rdrNextPrevButton{
+    background-color: $color-pink !important;
+    border-radius: 50% !important;
+}
+
+.rdrNextButton{
+    border-radius: 50% !important;
+}
+
+.rdrNextButton i {
+    border-color: transparent transparent transparent $color-primary !important;
+}
+
+.rdrPprevButton i{
+    border-color: transparent $color-primary transparent transparent !important;
+}
+
+.rdrMonthAndYearPickers {
+    justify-content: flex-start !important;
+}
+
+.rdrMonthAndYearPickers select {
+    color: $color-black !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+
+.rdrWeekDay {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: $color-black !important;
+}
+
+.rdrSelected{
+    color: $color-white !important;
+    border: 1px solid $color-primary !important;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+    color: $color-black !important;
+}
+
+.rdrDayStartPreview, .rdrDayEndPreview {
+    background: rgba(255, 255, 255, 0.09);
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    right: 0px;
+    bottom: 3px;
+    pointer-events: none;
+    border: 0px solid rgb(57, 196, 80) !important;
+    z-index: 1;
+}
+
+.rdrWeekDay:first-letter {
+    text-transform: uppercase;
+}
+
+.rdrMonthAndYearPickers select:hover {
+    background-color: $color-pink !important;
+}

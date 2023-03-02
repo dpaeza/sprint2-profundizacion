@@ -1,0 +1,66 @@
+.ChooseDate{
+    width: 230px;
+    height: 45px;
+    background-color: $color-white;
+    border: 2px solid $color-grey-2;
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    gap: 4px;
+    cursor: pointer;
+
+    &__div2{
+
+        .out{
+            font-weight: 400;
+            font-size: 13px;
+            color: $color-grey-1;
+        }
+        
+        .date{
+            font-weight: 500;
+            font-size: 13px;
+
+        }
+
+        .date:first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .ChooseDate{
+        width: 350px;
+    }
+}
+
+@media (max-width: 439px) {
+    .ChooseDate{
+        width: 320px;
+    }
+}
+
+@media (max-width: 399px) {
+    .ChooseDate{
+        width: 300px;
+    }
+}
+
+@media (max-width: 379px) {
+    .ChooseDate{
+        width: 280px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ChooseDate{
+        width: 260px;
+    }
+}
+
+@media (max-width: 360px) {
+    .ChooseDate{
+        width: 268px;
+    }
+}

@@ -1,0 +1,30 @@
+
+.plusMinusButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-grey-2;
+    border-radius: 6px;
+    height: 32px;
+    button{
+        margin: none;
+        background-color: $color-white;
+        border-style: none;
+        cursor: pointer;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 13px;
+        width: 30px;
+        border-left: 1px solid $color-grey-2;
+        border-right: 1px solid $color-grey-2;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

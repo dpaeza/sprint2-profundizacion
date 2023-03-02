@@ -1,0 +1,50 @@
+.luggage{
+    height: 90px;
+    width: 150px;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    border: 1px solid $color-grey-2;
+
+    .type{
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+
+    .price{
+        color: $color-black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.luggage__active{
+    background-color: $color-primary;
+    border: none;
+
+    .type{
+        color: $color-white;
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+
+    .price{
+        color: $color-white;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 450px) {
+    .luggage{
+        width: 100%;
+    }
+}

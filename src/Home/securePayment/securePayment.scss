@@ -1,0 +1,55 @@
+
+.securePayment{
+    
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    section{
+        width: 100%;
+        min-height: 130px;
+        border-radius: 25px;
+        padding: 35px;
+        box-shadow: 1px 4px 8px 1px rgba(51, 41, 39, .3);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+
+        p{
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .paymentMethods{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            margin-top: 10px;
+
+            figure{
+                width: 40px;
+                height: 40px;
+            }
+
+            img{
+                object-fit: contain;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .securePayment{
+
+        section{
+            padding: 35px 15px;    
+        }
+    }
+}
